@@ -45,7 +45,7 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
 These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.  
 tBodyAcc-XYZ  
 tGravityAcc-XYZ  
 tBodyAccJerk-XYZ  
@@ -74,18 +74,18 @@ The script produces a data frame with following details:
 
 The data frame has been built grouping up the data by activity and subject id and calculating average (mean) values for the measurements on the mean and standard deviation for each measurement.  
 
-### Columns
-** activity **
+### Columns  
+**activity**
 Describes the activity performed by volunteer (subjectid).  
 Type: character  
 Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING   
 
-** subjectId **
+**subjectId**
 Described the id number of the volunteer performing the activities  
 Type: Integer  
 Values: 1-30  
 
-** Measurement columns **  
+**Measurement columns**  
 All the measurement columns are numeric values.  
 t prefix is used to denote time.  
 f prefix indicates the frequency domain signals  
